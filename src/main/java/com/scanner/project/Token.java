@@ -21,7 +21,7 @@ this.value = value;
 @return Returns the value of a Token.*/
   public String getValue() {
       return value;
-  }
+}
 
     /*
      
@@ -36,7 +36,7 @@ this.type = type;
 @return Returns the type of a Token.*/
   public String getType() {
       return type;
-  }
+}
 
     public String toString() {
         return "Value: " + this.getValue() + " " + "Type: " + this.getType();
