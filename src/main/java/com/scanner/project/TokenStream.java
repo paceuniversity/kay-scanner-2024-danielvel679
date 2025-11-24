@@ -248,9 +248,10 @@ public class TokenStream {
 		return (c == '\r' || c == '\n' || c == '\f');
 	}
 
-	private boolean isEndOfToken(char c) { // Is the value a seperate token?
-		return (isWhiteSpace(nextChar) || isOperator(nextChar) || isSeparator(nextChar) || isEof);
-	}
+	private boolean isEndOfToken(char c) { // Is the value a separate token?
+    return isWhiteSpace(c) || isOperator(c) || isSeparator(c) || isEof;
+}
+
 
 	private void skipWhiteSpace() {
 		// check for whitespaces, and bypass them
@@ -281,5 +282,6 @@ public class TokenStream {
 		return isEof;
 	}
 }
+
 
 
