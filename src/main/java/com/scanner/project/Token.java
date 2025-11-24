@@ -1,4 +1,4 @@
-package com.scanner.project;
+package com.scannerproject;
 public class Token {
 
 	// Token type
@@ -43,3 +43,4 @@ public class Token {
 	}
 
 }
+
